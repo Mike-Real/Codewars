@@ -6,3 +6,7 @@ def openOrSenior(data):
         else:
             output.append('Open')
     return output
+
+#Best practices solution
+def openOrSenior(data):
+    return ["Senior" if age >= 55 and handicap >= 8 else "Open" for (age, handicap) in data]
